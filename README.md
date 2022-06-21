@@ -1,12 +1,6 @@
-# PingCAP Template Project
+# TiDB-over-RoCE Project
 
-The PingCAP Template Project is a template for starting new projects in the PingCAP incubator. All incubator projects, at minimum, must have the following files:
-
-- a `README.md` outlining the project goals, sponsoring sig, and community contact information
-- an `OWNERS` with the project leads listed as committers
-- a `CONTRIBUTING.md` outlining how to contribute to the project
-- an unmodified copy of `code-of-conduct.md` from this repo, which outlines community behavior and the consequences of breaking the code
-- a `LICENSE` which must be Apache 2.0 for code projects and documentation repositories, without any custom content
+This project proposes running TiDB over RoCE protocol, which means commucations between TiDB sever, pd and TiKV can benefit from RDMA technology, and higher performance and lower CPU workload are expected.
 
 ## Community, discussion, contribution, and support
 
