@@ -13,6 +13,19 @@ TODO
 
 TODO
 
+## Performance
+
+
+### grpc?
+
+TODO
+
+### YCSB Workloads
+
+YCSB workloads test based on [go-ycsb](https://github.com/pingcap/go-ycsb)
+
+![./ycsb-result.png](./images/ycsb-result.png)
+
 ## Steps to use
 
 ### TiDB\PD (or any other Go projects like go-mysql-client and ycsb-go)
