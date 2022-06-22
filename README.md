@@ -6,14 +6,29 @@ This project proposes running TiDB over RoCE protocol, which means commucations 
 
 ![tidb-over-roce-arch](./images/tidboverroce-architecture.png)
 
-## Community, discussion, contribution, and support
+### Design for go-rdma
 
-Learn how to engage with the PingCAP community on the [community page](https://github.com/pingcap/community) and TiKV community on the [TiKV community page](https://github.com/tikv/community).
+TODO
+### Design for grpc-rdma
 
-You can reach the maintainers of this project at:
+TODO
 
-- [Slack: tidbcommunity](https://tidbcommunity.slack.com/)
+## Steps to use
 
-### Code of conduct
+### TiDB\PD (or any other Go projects like go-mysql-client and ycsb-go)
 
-Participation in the PingCAP community is governed by the [Code of Conduct](code-of-conduct.md).
+1. Download all directories in this resposity
+
+2. Set GOROOT to the go-rdma path, build golang binary using `./make.bash` in go-rdma/src/
+
+3. Compile rdma-core library, and make sure the library path in top of [go-rdma/src/rdma/fd_unix.go](./go-rdma/src/rdma/fd_unix.go) is correct to your rdma-core path
+
+4. Compile TiDB and PD, then the executable file (tidb-server\pd-server) you got will communicate using RDMA 
+
+### TiKV (or any other projects using grpc/grpc-rs)
+
+1. TODO
+
+## Tips
+
+TODO
