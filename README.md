@@ -19,9 +19,9 @@ TODO
 
 1. Download all directories in this resposity
 
-2. Set GOROOT to the go-rdma path, build golang binary using `./make.bash` in go-rdma/src/
+2. Set GOROOT to the go-rdma path, build golang binary using `./make.bash` in `go-rdma/src/`
 
-3. Compile rdma-core library, and make sure the library path in top of [go-rdma/src/rdma/fd_unix.go](./go-rdma/src/rdma/fd_unix.go) is correct to your rdma-core path
+3. Compile rdma-core library using `./build.sh` in `rdma-core` path, and make sure the library path in top of [go-rdma/src/rdma/fd_unix.go](./go-rdma/src/rdma/fd_unix.go) is consistent with your rdma-core path
 
 4. Compile TiDB and PD, then the executable file (tidb-server\pd-server) you got will communicate using RDMA 
 
