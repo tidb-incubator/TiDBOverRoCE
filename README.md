@@ -16,10 +16,20 @@ TODO
 ## Performance
 
 
-### gRPC?
+### gRPC
 
 The benchmark test based on [gRPC performance test](https://github.com/grpc/grpc/tree/master/tools/run_tests/performance)
-[gRPC-rdma benchmark test results](./images/gRPC_RDMA_benchmark_result.png)
+
+Fig1 depicts the percentage and number of gRPC-TCP and gRPC-RDMA that are dominant in QPS in 295 benchmark scenarios.
+
+Fig2 depicts the QPS increase percentage and numbers of scenarios using gRPC-RDMA compared to gRPC-TCP.
+e.g.[10%, 20%] means there are 32 scenarios(total 295) where the qps growth distributed in this range using gRPC-RDMA compared to gRPC-TCP.
+
+Fig3 and Fig4 depicts the client/server system time decrease percentage and the number of scenarios using gRPC-RDMA compared to gRPC-TCP.
+e.g.Fig3 [-98.9%, -89.9%] means there are 107 scenarios(total 295), the increase of server system time(negative means optimization) is distributed in this interval.
+
+![gRPC-rdma benchmark test results](./images/gRPC_RDMA_benchmark_result.png)
+
 
 ### YCSB Workloads
 
