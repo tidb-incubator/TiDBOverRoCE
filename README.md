@@ -16,9 +16,10 @@ TODO
 ## Performance
 
 
-### grpc?
+### gRPC?
 
-TODO
+The benchmark test based on [gRPC performance test](https://github.com/grpc/grpc/tree/master/tools/run_tests/performance)
+[gRPC-rdma benchmark test results](./images/gRPC_RDMA_benchmark_result.png)
 
 ### YCSB Workloads
 
@@ -40,7 +41,7 @@ YCSB workloads test based on [go-ycsb](https://github.com/pingcap/go-ycsb)
 
 ### TiKV (or any other projects using grpc/grpc-rs)
 
-1. TODO
+[How to integrate TiKV with grpc-rdma](./doc/Integrate_tikv_with_grpc-rdma.md)
 
 ## Tips
 
